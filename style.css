@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./resources/background-image.png) ;
+  background-repeat: no-repeat;
+  background-size: 100% 40%;
+  font-family: Inter, sans-serif;
+  padding-top: 80px;
+  background: #FFFFFF, linear-gradient(to right, #FFFFFF, #D2D5DA);
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  
+}
+nav h1{
+  color: #FFFFFF;
+  margin-right: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+nav div{
+  background-color: #1D1D1F;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 3px;
+  width: 70px;
+  text-align: center;
+}
+nav div a{
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+main{
+  /* background-color: aqua; */
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+
+}
+
+.left{
+  padding: 10px;
+  background-color: #D2D5DA;
+  border-radius: 10px 0px 0px 10px;
+}
+article{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+article div{
+  padding: 10px;
+}
+article div:not(:last-child){
+  margin-right: 40px;
+}
+
+article .image{
+  background-color: #FFFFFF;
+  width: 100px;
+  border-radius: 10px;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+article div .color{
+  margin-bottom: 20px;
+}
+article .amounts{
+  text-align: right;
+  width: 100px;
+  height: 100px;
+}
+article .amounts h1{
+  margin-bottom: 39px;
+}
+article .description{
+  width: 150px;
+  height: 100px;
+}
+.coupon{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+}
+.coupon .input{
+  background-color: #FFFFFF;
+  width: 68%;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  color: #394150;
+  font-family: Inter, sans-serif;
+}
+.button-apply{
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
+  color: #F3F4F6;
+  background-color: #000000;
+  border: none;
+  border-radius: 7px;
+  width: 30%;
+  height: 40px;
+  text-align: center;
+  /* margin-left: 35px; */
+}
+table{
+  width: 100%;
+  padding: 10px;
+}
+table tr:last-child{
+  font-weight: 700;
+}
+table tr td:last-child{
+  text-align: right;
+}
+.right{
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 0px 10px 10px 0px;
+  width: 450px;
+}
+.right h1{
+  text-align: left;
+  margin-bottom: 40px;
+}
+.right p{
+  text-align: left;
+  color: #394150;
+  margin-bottom: 15px;
+}
+.right input{
+  color: #394150;
+  width: 100%;
+  padding: 10px;
+  height: 40px;
+  margin-bottom: 15px;
+  background-color: #D2D5DA;
+  border: none;
+  border-radius: 7px;
+  font-family: Inter, sans-serif;
+  font-size: 1rem;
+}
+.right section{
+  display: flex;
+  flex-direction: row;
+}
+.right section .country{
+  width: 50%;
+  padding: 5px;
+}
+.right section .country select{
+  width: 100%;
+  border: none;
+  background-color:#D2D5DA;
+  height: 40px;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-family: Inter, sans-serif;
+  text-align: left;
+  padding: 10px;
+}
+.right section .code{
+  width: 50%;
+  padding: 5px;
+}
+#Continue{
+  margin-top: 10px;
+  background-color: #000000;
+  width: 100%;
+  color: #FFFFFF;
+  height: 50px;
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);}
+
+.author-info a {
+  text-decoration: none; }
+
+
+/* Media queries */
+@media screen and (max-width:500px) {
+  body{
+    background-size: 100% 20%;
+    flex-direction: column;
+    padding-top: 0%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    height: min-content;
+    font-size: 1rem;
+  }
+  nav{
+    padding:0 ;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+
+  main{
+    flex-direction: column;
+    width: 90%;
+  }
+  .left{
+    border-radius: 1rem 1rem 0 0;
+  }
+  article{
+    width: 100%;
+  }
+  article div:not(:last-child) {
+    margin-right: 1rem;
+  }
+  article .image{
+    width: 25rem;
+    height: 6rem;
+  }
+  article .description {
+    width: 20rem;
+    height: 6rem;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  article h1{
+    font-size: 0.8rem;
+  }
+  article div .color {
+    margin-bottom: 1rem;
+  }
+  article .amounts {
+    text-align: right;
+    width: 20rem;
+    height: 6rem;
+  }
+  .coupon {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+  }
+  .coupon .input{
+    width: 60%;
+    font-size: 0.8rem;
+  }
+  .button-apply{
+    width: 35%;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+  }
+  table tr td:first-child{
+    text-align: left;
+  }
+  .right{
+    width: 100%;
+  }
+}
+
+/* Tablet settings */
+@media screen and (max-width: 1080px) and (min-width:500px) {
+  body{
+    background-size: 100% 40%;
+  }
+  .left{
+    padding: 0;
+    width: 50%;
+  }
+  .left article{
+    width: fit-content;
+  }
+  article div:not(:last-child) {
+    margin-right: 1rem;
+  }
+  article .description {
+    width: 10rem;
+    /* background-color: red; */
+    height: 8rem;
+  }
+  hr{
+    width: 90%;
+  }
+  .coupon .input{
+    width: 60%;
+  }
+  .button-apply{
+    width: 35%;
+  }
+  table{
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="phonestyle.css">
+    <title>Device Shop Checkout | devChallenges.io</title>
+  </head>
+  <body>
+        <!-- top heading -->
+    <nav>
+      <h1>Checkout</h1>
+      <div class="item"><a href="#">3 ITEMS</a></div>
+    </nav>
+    <!-- the main -->
+    <main class="mainpart">
+      <!-- left section -->
+      <section class="left">
+        <div class="iphone" id="iphone">
+          <article class="chart">
+            <div class="image"><img src="./resources/Gold.png" alt="Iphone 12 Pro"></div>
+            <div class="description">
+              <h1>iPhone 12 Pro</h1>
+              <p class="color">Golden</p>
+              <p>x 1</p>
+            </div>
+            <div class="amounts">
+              <h1>$999.00</h1>
+              <p>X</p>
+            </div>
+          </article>
+        </div>
+        <div class="watch" id="watch">
+          <article class="chart">
+            <div class="image"><img src="./resources/Apple-watch.png" alt="Apple Watch"></div>
+            <div class="description">
+              <h1>Apple-watch</h1>
+              <p class="color">Blue</p>
+              <p>x 1</p>
+            </div>
+            <div class="amounts">
+              <h1>$399.00</h1>
+              <p>X</p>
+            </div>
+          </article>
+        </div>
+        <div class="imac" id="imac">
+          <article class="chart">
+            <div class="image"><img src="./resources/iMac.png" alt="iMac"></div>
+            <div class="description">
+              <h1>iMac</h1>
+              <p class="color">Green</p>
+              <p>x 1</p>
+            </div>
+            <div class="amounts">
+              <h1>$1199.00</h1>
+              <p>X</p>
+            </div>
+          </article>
+        </div>
+        <hr>
+        <!-- coupon details -->
+         <div class="coupon" id="coupon">
+          <input type="text" class="input" placeholder="Enter coupon code">
+          <input type="button" class="button-apply" value="Apply Coupon">
+         </div>
+         <table>
+          <tr>
+            <td>Sub total</td>
+            <td>$2597.00</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>$623.28</td>
+          </tr>
+          <tr class="total">
+            <td>Total</td>
+            <td>$3220.28</td>
+          </tr>
+        </table>
+      </section>
+      <!--right Section  -->
+      <section class="right">
+        <h1>Contact Information</h1>
+        <p>First & Last name</p>
+        <input type="text" placeholder="Enter first 7 last name">
+        <p>Email Address</p>
+        <input type="text" placeholder="Enter email address">
+        <section>
+          <div class="country"><p>Country</p>
+            <select name="country" id="country">
+              <option value="fin">Finland</option>
+              <option value="others"> ....</option>
+            </select><label for="country"></label></div>
+          <div class="code"><p>Postal Code</p>
+            <input type="text" placeholder="00270"></div>
+        </section>
+        <input type="button" class="Continue" id="Continue" value="Continue">
+
+      </section>
+    </main>
+    
+
+    <div class="author-info">
+      Coded by <a href="#">Muwanguzi Joshua</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
